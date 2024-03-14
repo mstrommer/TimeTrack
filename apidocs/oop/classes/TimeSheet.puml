@@ -1,0 +1,23 @@
+@startuml
+    set namespaceSeparator none
+    hide empty fields
+    hide empty methods
+
+    class "<size:14>TimeSheet\n<size:10>oop.classes" as oop.classes.TimeSheet [[TimeSheet.html]] {
+        -employeeId: int
+        -workingHours: int
+        -sickLeave: int
+        -vacation: int
+        +TimeSheet(int)
+        +TimeSheet(TimeSheet)
+        +setWorkingHours(int): void
+        +setSickLeave(int): void
+        +setVacation(int): void
+        +getEmployeeId(): int
+        +getSickLeave(): int
+        +getWorkingHours(): int
+        +getVacation(): int
+    }
+
+    center footer UMLDoclet 2.1.0, PlantUML %version()
+@enduml
